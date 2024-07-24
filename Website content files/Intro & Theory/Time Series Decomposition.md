@@ -1,3 +1,19 @@
+---
+---
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ### 3.1.1 Introduction to Time Series Decomposition
 
 Time series decomposition is an important analytical technique for time series analysis. It is useful for datasets that have seasonality. The method makes it possible to split up a time series into its fundamental components: trend, seasonality, and remainders. Therefore, a decomposition does not only give an understanding of the underlying patterns within the data, but also gives insight for interpreting subsequent analyses.
@@ -10,9 +26,9 @@ The application of time series decomposition in machine learning is diverse. It 
 
 The following section will shed light on specific decomposition methods, with a focus on STL (Seasonal and Trend decomposition using Loess) and MSTL (Multiple Seasonal and Trend decomposition using Loess). These techniques offer sophisticated frameworks for decomposing time series data and can handle complex patterns including multiple seasonalities, which are increasingly prevalent in modern time series data. Since it has increased frequencies due to databases that can be updated more frequently than just once a month, the incorporation of more powerful computers and the internet can provide more frequent datapoints.
 
-STL decomposition deconstructs a time series, \( Y_t \), into three fundamental components, providing an understanding of the data’s underlying patterns over time. At first, the method isolates the trend component, \( T_t \), which captures the long-term progression or decline in the series, reflecting whether there is an increase or decline in the data, representing changes that are not due to systematic or seasonal variations. In the context of energy consumption, this could be underlying consumer habits and behavior that might change over time. Next, it extracts the seasonal component \( S_t \), which identifies recurring patterns or variation that happen at regular intervals, which provides information on the systematic behavior of the data. Lastly, the remaining component \( R_t \) is determined, representing the irregular or random variation that cannot be attributed to the trend or seasonal factors. The decomposition can be written as:
+STL decomposition deconstructs a time series, \\( Y_t \\), into three fundamental components, providing an understanding of the data’s underlying patterns over time. At first, the method isolates the trend component, \( T_t \), which captures the long-term progression or decline in the series, reflecting whether there is an increase or decline in the data, representing changes that are not due to systematic or seasonal variations. In the context of energy consumption, this could be underlying consumer habits and behavior that might change over time. Next, it extracts the seasonal component \( S_t \), which identifies recurring patterns or variation that happen at regular intervals, which provides information on the systematic behavior of the data. Lastly, the remaining component \( R_t \) is determined, representing the irregular or random variation that cannot be attributed to the trend or seasonal factors. The decomposition can be written as:
 
-\[ Y_t = T_t + S_t + R_t \]
+$$  Y_t = T_t + S_t + R_t $$
 
 where \( Y_t \) is the original time series, \( T_t \) is the trend component, \( S_t \) is the seasonal component, and \( R_t \) is the remaining component at time \( t \).
 
@@ -28,7 +44,7 @@ In the formula above, \( x_i \) are the neighboring data points, and \( h \) is 
 
 #### 3.1.2.2 Trend Component \( T_t \)
 
-The trend component, \( T_t \), in STL decomposition is extracted using Loess smoothing. For each point in the series, Loess fitting involves selecting a subset of data points around the target point, weighted by their proximity, to fit a low-degree polynomial. 
+The trend component, \( T_t \), in STL decomposition is extracted using Loess smoothing. For each point in the series, Loess fitting involves selecting a subset of data points around the target point, weighted by their proximity, to fit a low-degree polynomial.
 
 The trend component \( T_t \) is extracted through Loess smoothing across the time series. The sensitivity of \( T_t \) to short-term fluctuations is modulated by the bandwidth \( h \). A larger \( h \) smooths over a broader swath of data, capturing more generalized trends and reducing sensitivity to short-term variations:
 
@@ -70,7 +86,7 @@ The next plot captures the seasonal component \( S_t \), swinging periodically t
 
 Lastly, the remaining component \( R_t \) signifies the irregularities and stochastic deviations that the trend and seasonal models have not captured. Examining the remainders closely can disclose valuable insights into the nuances of the data, potentially discovering outliers or anomalous events that stand apart from the expected pattern.
 
-Although this is a constructed example, it still gives an idea of how one can analyze the visualization of STL decomposition. By looking at visualizations of a time series, one might discover distinct patterns and observe what different components tell. Therefore, it is important for understanding the underlying structure of the dataset. As observed in the remaining component, there remains an element of seasonality, which can be attributed to our focus solely on annual seasonality, while potentially overlooking daily seasonality in our underlying data. 
+Although this is a constructed example, it still gives an idea of how one can analyze the visualization of STL decomposition. By looking at visualizations of a time series, one might discover distinct patterns and observe what different components tell. Therefore, it is important for understanding the underlying structure of the dataset. As observed in the remaining component, there remains an element of seasonality, which can be attributed to our focus solely on annual seasonality, while potentially overlooking daily seasonality in our underlying data.
 
 Furthermore, this suggests the necessity for employing Multiple Seasonal-Trend decomposition using Loess (MSTL) to address data characterized by more than one seasonal component.
 
@@ -85,7 +101,7 @@ MSTL extends the concepts of STL, applying an additive model to decompose a time
 where \( S_t^i \) denotes the seasonal component, \( T_t \) the trend, and \( R_t \) the remainder, similar to STL. The multiple seasonal components make the MSTL approach able to handle time series with multiple seasonal components, which is present in energy consumption. The algorithm begins by determining the seasonal patterns within the time series, identifying and arranging these in ascending order. In cases of non-seasonal time series, MSTL focuses on computing the trend and remainder, applying other smoothing techniques such as Friedman's Super Smoother (Bandara et al., 2022).
 
 
-Firstly, the ´na.interp´ is used for any missing data in the time series. This is done to ensure that the subsequent analyses are carried out on the complete data. Secondly, if the user specifies the Box Cox transformation, then it is used to modify the data such that it fits an additive decomposition model. 
+Firstly, the ´na.interp´ is used for any missing data in the time series. This is done to ensure that the subsequent analyses are carried out on the complete data. Secondly, if the user specifies the Box Cox transformation, then it is used to modify the data such that it fits an additive decomposition model.
 When the data is preprocessed, the decomposition begins. The initial phase of decomposition involves the extraction of each seasonal component. This is done through the application of STL. To ensure the maximum accuracy of the seasonal components, the algorithm starts with the shortest periods, such as daily data, and then progresses to longer periods, such as weekly and yearly data. This approach allows to isolate and remove the shorter seasonal patterns before examining the longer patterns.
 
 After the initial round of seasonal extraction, each component is roughly estimated, and the time series is temporarily de-seasonalized. In the second phase of decomposition, the algorithm reintegrates and re-extract each seasonal component to improve them. This iterative process, which involves adding and subtracting of components from the de-seasonalized time series, finds a more precise estimate of each seasonal component.
