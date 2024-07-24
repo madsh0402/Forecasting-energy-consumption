@@ -30,7 +30,7 @@ navbar-links:
     - ML Boosting: "404"
   Intro & theory:
     - Intro: "404"
-    - Time series decomposition: "404"
+    - Time series decomposition: "/Website content files/Intro & Theory/Time Series Decomposition"
     - Rolling window: "404"
     - Bias Variance trade-off: "404"
     - Hyperparameter tuning: "404"
