@@ -77,7 +77,7 @@ The iterative aspect of STL refines \\( T_t \\) and \\( S_t \\) by using the rem
 
 To explain the STL decomposition process, a visual representation is made to illustrate the idea of the method. For these purposes, a time series was simulated, which encapsulates a linearly ascending trend, seasonal fluctuation, and some random noise to try and demonstrate what one might expect from the real world.
 
-![png](STL plot.png)
+![png](STL_plot.png)
 
 In figure 1, the uppermost plot portrays the original simulated time series \\( Y_t \\), which is built from trend, seasonality, and noise. It's the raw, unrefined essence of observational data. Beneath it lies the trend component \\( T_t \\), which should illustrate a steady upward trajectory, unswayed by the fluctuations of periodic patterns. However, due to the multiple seasonal components in the time series, it has periodic patterns, which is why STL is not sufficient for this thesis. The next chapter will look into how to handle multiple seasonalities as energy consumption contains.
 
@@ -112,6 +112,6 @@ Unlike STL, which is limited to a single seasonal decomposition MSTL can handle 
 This means that if the MSTL algorithm explained above gets applied to the timeseries from figure 1, then it should be able to capture both the seasonal components:
 
 
-![png](STL plot.png)
+![png](MSTL_plot.png)
 
 hen the MSTL algorithm is applied to the same time series that STL was unable to completely decompose, as seen in Figure 1, the trend now illustrates a steady upward trajectory, unswayed by the fluctuations of periodic patterns. Furthermore, this periodic pattern that was left in the trend in Figure 1 can now be seen as its own component, \\( S_t^2 \\). This shows MSTL's ability to decompose time series that contain more than one seasonal component, and therefore its relevance in forecasting energy consumption.
