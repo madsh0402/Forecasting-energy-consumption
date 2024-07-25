@@ -31,7 +31,7 @@ navbar-links:
   Intro & theory:
     - Intro: "404"
     - Time series decomposition: "/Website content files/Intro & Theory/Time Series Decomposition"
-    - Rolling window: "404"
+    - Rolling window: "/Website content files/Intro & Theory/Rolling Window"
     - Bias Variance trade-off: "404"
     - Hyperparameter tuning: "404"
     - Ordinary Least Squares: "404"
