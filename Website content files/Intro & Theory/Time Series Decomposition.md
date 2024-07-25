@@ -99,19 +99,23 @@ $$ Y_t = S_t^1 + S_t^2 + \cdots + S_t^n + T_t + R_t $$
 
 where \\( S_t^i \\) denotes the seasonal component, \\( T_t \\) the trend, and \\( R_t \\) the remainder, similar to STL. The multiple seasonal components make the MSTL approach able to handle time series with multiple seasonal components, which is present in energy consumption. The algorithm begins by determining the seasonal patterns within the time series, identifying and arranging these in ascending order. In cases of non-seasonal time series, MSTL focuses on computing the trend and remainder, applying other smoothing techniques such as Friedman's Super Smoother (Bandara et al., 2022).
 
+![image.png](MSTL_algorithm.png)
 
 Firstly, the ´na.interp´ is used for any missing data in the time series. This is done to ensure that the subsequent analyses are carried out on the complete data. Secondly, if the user specifies the Box Cox transformation, then it is used to modify the data such that it fits an additive decomposition model.
+
 When the data is preprocessed, the decomposition begins. The initial phase of decomposition involves the extraction of each seasonal component. This is done through the application of STL. To ensure the maximum accuracy of the seasonal components, the algorithm starts with the shortest periods, such as daily data, and then progresses to longer periods, such as weekly and yearly data. This approach allows to isolate and remove the shorter seasonal patterns before examining the longer patterns.
 
 After the initial round of seasonal extraction, each component is roughly estimated, and the time series is temporarily de-seasonalized. In the second phase of decomposition, the algorithm reintegrates and re-extract each seasonal component to improve them. This iterative process, which involves adding and subtracting of components from the de-seasonalized time series, finds a more precise estimate of each seasonal component.
 
 The last component of the extract in the STL fit is the trend, which is acquired after uncovering the longest periodic component. The remaining component, representing what remains after removing both the seasonal effects and the trend, is calculated by subtracting the trend from the de-seasonalized time series.
+
 In cases where time series lack seasonal components, the MSTL directly smoothens the time series to derive a trend component, without extracting any seasonal components. This adjustment is suitable for handling time series where seasonal variation is irrelevant, but where an overarching trend is still of interest for analysis.
 
 Unlike STL, which is limited to a single seasonal decomposition MSTL can handle cases with multiple seasonalities by identifying each of the seasonality components. This makes MSLT more accurate when dealing with time series that have different seasonal factors which may even overlay. MSTL is also known for its computational efficiency which gives it an advantage over other decomposition methods like Fourier series analysis. Fourier series analysis might struggle with larger datasets and multiple frequencies compared to MSTL which can handle data swiftly. This makes MSTL a good practical choice for larger datasets. Especially, if the models used are used for real-time monitoring (Bandara et al 2022).
+
 This means that if the MSTL algorithm explained above gets applied to the timeseries from figure 1, then it should be able to capture both the seasonal components:
 
 
 ![image.png](MSTL_plot.png)
 
-hen the MSTL algorithm is applied to the same time series that STL was unable to completely decompose, as seen in Figure 1, the trend now illustrates a steady upward trajectory, unswayed by the fluctuations of periodic patterns. Furthermore, this periodic pattern that was left in the trend in Figure 1 can now be seen as its own component, \\( S_t^2 \\). This shows MSTL's ability to decompose time series that contain more than one seasonal component, and therefore its relevance in forecasting energy consumption.
+When the MSTL algorithm is applied to the same time series that STL was unable to completely decompose, as seen in Figure 1, the trend now illustrates a steady upward trajectory, unswayed by the fluctuations of periodic patterns. Furthermore, this periodic pattern that was left in the trend in Figure 1 can now be seen as its own component, \\( S_t^2 \\). This shows MSTL's ability to decompose time series that contain more than one seasonal component, and therefore its relevance in forecasting energy consumption.
