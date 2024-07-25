@@ -1,3 +1,19 @@
+---
+---
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ## 3.4 Bias variance trade-off
 
 A fundamental aspect that affects a model's generalization ability is the tradeoff between bias and variance, two types of error that, together with irreducible error, constitute the expected prediction error of a model. Understanding and managing this tradeoff will help to create an accurate prediction model.
