@@ -14,6 +14,7 @@
   </script>
 </div>
 
+## 3.1 Time series decomposition
 ### 3.1.1 Introduction to Time Series Decomposition
 
 Time series decomposition is an important analytical technique for time series analysis. It is useful for datasets that have seasonality. The method makes it possible to split up a time series into its fundamental components: trend, seasonality, and remainders. Therefore, a decomposition does not only give an understanding of the underlying patterns within the data, but also gives insight for interpreting subsequent analyses.
