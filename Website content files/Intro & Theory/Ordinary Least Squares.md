@@ -12,6 +12,8 @@
   </script>
 </div>
 
+## 3.7 Ordinary Least Squares
+
 The OLS method is a foundational technique for linear regression. This method aims to provide the best possible estimates of the regression coefficients, facilitating the prediction of the behavior of a dependent variable based on independent variables. It works by minimizing the sum of the squares of the differences between observed and predicted values, aiming to make these predictions as accurate as possible.
 
 Mathematically, the goal of OLS can be expressed through the sum of squared residuals (SSR), which is the sum of squared differences between the observed values (\\( y_t \\)) and the predicted values (\\( \hat{y}_t \\)). The sum of squared residuals is therefore expressed as:
