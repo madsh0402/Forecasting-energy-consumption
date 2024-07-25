@@ -22,7 +22,7 @@ where the model is given as:
 
 $$ \hat{y}_t = \beta_0 + \beta_1 X_{t,1} + \beta_2 X_{t,2} + \cdots + \beta_n X_{t,n} + \epsilon $$
 
-Here, \\( \hat{y}_t \\) is the dependent variable (e.g., energy consumption), \\( X_{t,1}, X_{t,2}, \ldots, X_{t,n} \\) are independent variables (such as weather conditions), \\( \beta_0 \\) is the intercept, \\( \beta_1, \beta_2, \ldots, \beta_n \\) are the coefficients that need to be estimated, and \\( \epsilon \\) is the error term (Hastie et al., 2017).
+Where, \\( \hat y_t \\) is the dependent variable (e.g., energy consumption), \\( X_t,1, X_t,2, \ldots, X_t,n \\) are independent variables (such as weather conditions), \\( \beta_0 \\) is the intercept, \\( \beta_1, \beta_2, \ldots, \beta_n \\) are the coefficients that need to be estimated, and \\( \epsilon \\) is the error term (Hastie et al., 2017).
 
 The essence of OLS is to find the best estimates for these coefficients, \\( \hat{\beta} \\), that minimize the SSR. \\( \hat{\beta} \\) is found by solving the OLS normal equations, and the solution can be shown using matrix notation as:
 

@@ -1,3 +1,19 @@
+---
+---
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ## 3.5 Hyperparameter tuning
 
 Hyperparameters are parameters where the values are determined before the learning process begins, unlike model parameters, which are derived through training. Hyperparameters will influence the learning process and the resulting model's performance. Examples of hyperparameters include the learning rate or the number of trees in a Random Forest (RF) model.
