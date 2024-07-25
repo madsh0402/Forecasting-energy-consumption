@@ -10,21 +10,48 @@
 ############################
 
 # Name of website
-title: My website
+title: Forecasting energy consumption
 
 # Your name to show in the footer
-author: Some Person
+author: Mads Hansen And Victor Gustavsen
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Old reseach: 
+    - Data Energy: "/Website content files/Old Research/Energy/Energy Data"
+    - Data Weather observatioos: "/Website content files/Old Research/Weather observations/Tempature data"
+    - Data Weather forecasts: "/Website content files/Old Research/Forecast/Historical forecasts data"
+    - Data Combine the Data: "/Website content files/Old Research/Merged dataset/Combining the data"
+    - ML OLS: "/Website content files/Old Research/ML OLS/OLS"
+    - ML Random Forest: "/Website content files/Old Research/ML Random Forest/Random Forrest Regression"
+    - ML Boosting: "404"
+  Intro & theory:
+    - Intro: "404"
+    - Time series decomposition: "/Website content files/Intro & Theory/Time Series Decomposition"
+    - Rolling window: "/Website content files/Intro & Theory/Rolling Window"
+    - Bias Variance trade-off: "404"
+    - Hyperparameter tuning: "404"
+    - Ordinary Least Squares: "404"
+    - Tree-based models & Random Forest: "404"
+    - Diabold-Mariano test: "404"
+
+  Data Analysis:
+    - Statistical insights of numerical variables: "404"
+    - Correlation analysis: "404"
+    - Decomposition of energy consumption: "404"
+
+  Forecasting:
+    - Remainder Framework: "404"
+    - Remainder Data preperation: "404"
+    - Remainder Rolling window approach: "404"
+    - Remainder Random Forest: "404"
+    - Remainder Evalutation of best models: "404"
+    - Real time forecasting: "404"
+
+  Authors: "404"
 
 ################
 # --- Logo --- #
@@ -93,17 +120,17 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: false
+  facebook: false
+  linkedin: false
   vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "Forecasting energy consumption"
 
 # Add the website title to the title of every page
-title-on-all-pages: true
+title-on-all-pages: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50

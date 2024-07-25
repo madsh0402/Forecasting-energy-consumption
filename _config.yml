@@ -32,9 +32,9 @@ navbar-links:
     - Intro: "404"
     - Time series decomposition: "/Website content files/Intro & Theory/Time Series Decomposition"
     - Rolling window: "/Website content files/Intro & Theory/Rolling Window"
-    - Bias Variance trade-off: "404"
-    - Hyperparameter tuning: "404"
-    - Ordinary Least Squares: "404"
+    - Bias Variance trade-off: "/Website content files/Intro & Theory/Bias Variance Trade Off"
+    - Hyperparameter tuning: "/Website content files/Intro & Theory/Hyperparameter Tuning"
+    - Ordinary Least Squares: "/Website content files/Intro & Theory/Ordinary Least Squares"
     - Tree-based models & Random Forest: "404"
     - Diabold-Mariano test: "404"
 
