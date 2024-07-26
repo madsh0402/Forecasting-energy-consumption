@@ -34,7 +34,7 @@ navbar-links:
     - Rolling window: "/Website content files/Intro & Theory/Rolling Window"
     - Bias Variance trade-off: "/Website content files/Intro & Theory/Bias Variance Trade Off"
     - Hyperparameter tuning: "/Website content files/Intro & Theory/Hyperparameter Tuning"
-    - Machine Learning in Time Series: "404"
+    - Machine Learning in Time Series: "/Website content files/Intro & Theory/Machine learning in time series"
     - Ordinary Least Squares: "/Website content files/Intro & Theory/Ordinary Least Squares"
     - Tree-based models & Random Forest: "/Website content files/Intro & Theory/Tree-Based Models & Random Forest"
     - Diabold-Mariano test: "/Website content files/Intro & Theory/Diabold-Mariano Test"
