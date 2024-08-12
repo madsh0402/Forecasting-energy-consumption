@@ -40,7 +40,8 @@ navbar-links:
     - Diabold-Mariano test: "/Website content files/Intro & Theory/Diabold-Mariano Test"
 
   Data Analysis:
-    - Statistical insights of numerical variables: "404"
+    - Statistical insights of numerical variables: "/Website content files/Data analysis/Statistical insights of numerical variables/Statistical Insights of Numerical Variables"
+    - Seasonality Analysis: "/Website content files/Data analysis/Seasonality Analysis/Seasonality"
     - Correlation analysis: "404"
     - Decomposition of energy consumption: "404"
 
