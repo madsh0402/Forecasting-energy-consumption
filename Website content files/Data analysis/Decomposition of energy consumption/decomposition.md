@@ -65,8 +65,3 @@ If we now look at the trend component extracted from the MSTL decomposition reve
 The remainders of the decomposition represent the noise or irregularities not explained by the trend or seasonal components. Fluctuations in the residuals could stem from unpredictable events, outliers, data anomalies, or other non-systematic factors affecting energy consumption.
 
 The MSTL decomposition provides a detailed dissection of the energy consumption time series. The identification of a declining trend could have a significant impact for long-term energy planning. Similarly, recognizing the specific seasonal patterns aids in developing the accuracy of short-term forecasting models. The remaining component's analysis could also lead to improved models by identifying and accounting for anomalies.
-
-
-```python
-
-```
