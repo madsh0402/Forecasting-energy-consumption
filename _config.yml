@@ -45,12 +45,13 @@ navbar-links:
     - Correlation analysis: "/Website content files/Data analysis/Correlation analysis/Correlation Analysis"
     - Decomposition of energy consumption: "/Website content files/Data analysis/Decomposition of energy consumption/decomposition"
     
-  Forecasting:
-    - Remainder Framework: "404"
-    - Remainder Data preperation: "404"
-    - Remainder Rolling window approach: "404"
-    - Remainder Random Forest: "404"
-    - Remainder Evalutation of best models: "404"
+  Forecasting Remainders:
+    - Forecasting: "/Website content files/Forecasting/Forecasting analyzes/Forecasting analyzes"
+    - Framework: "404"
+    - Data preperation: "404"
+    - Rolling window approach: "404"
+    - Random Forest: "404"
+    - Evalutation of best models: "404"
     - Real time forecasting: "404"
 
   Authors: "404"
