@@ -1,3 +1,18 @@
+---
+---
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
 ```python
 import warnings
 
@@ -31,7 +46,7 @@ By leveraging correlation analysis to determine key variables that significantly
 
 
 ```python
-df = pd.read_csv("C:/Users/madsh/OneDrive/Dokumenter/kandidat/Fællesmappe/Forecasting-energy-consumption/Data Cleaning/output_file.csv", encoding="utf-8")
+df = pd.read_csv("output_file.csv", encoding="utf-8")
 ```
 
 ### 4.6.1 Correlation of numerical variables
@@ -42,7 +57,7 @@ In this section, the correlation between various numerical variables as indicate
 ```python
 # Assuming agg_timeseries is your loaded DataFrame with the time-series data
 # Select only the numerical columns for the correlation matrix
-numerical_columns = ['GrossConsumptionMWh', 'Electric cars', 'Plug-in hybrid cars', 'humidity_past1h', 'temp_mean_past1h', 
+numerical_columns = ['GrossConsumptionMWh', 'Electric cars', 'Plug-in hybrid cars', 'humidity_past1h', 'temp_mean_past1h',
                      'wind_speed_past1h', 'EL_price']
 numerical_data_timeseries  = df[numerical_columns]
 
@@ -52,7 +67,7 @@ correlation_matrix_timeseries  = numerical_data_timeseries.corr()
 
 # Visualize the correlation matrix
 plt.figure(figsize=(10, 8))
-sns.heatmap(correlation_matrix_timeseries, annot=True, fmt=".4f", cmap='coolwarm', 
+sns.heatmap(correlation_matrix_timeseries, annot=True, fmt=".4f", cmap='coolwarm',
             cbar_kws={'label': 'Correlation Coefficient'})
 plt.title('Correlation Matrix for Numerical Variables')
 plt.xticks(rotation=45)  # Rotating the x-axis labels to 45 degrees
@@ -60,9 +75,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_7_0.png)
-    
+
 
 
 The dataset reveals a nuanced relationship between the changes in the populations of electrical cars (Electric cars) and plug-in hybrid cars (Plug-in hybrid cars). A positive correlation between these variables suggests a slight synchronous trend in the adoption rates of these two types of vehicles. While the correlation is not strong enough to suggest a robust predictive power for one variable over the other, it indicates a potential shared influence on or reaction to external factors affecting both types of vehicles. This relationship, although subtle, could be a point of interest in modeling energy consumption, particularly in exploring how shifts in vehicle populations relate to energy demand.
@@ -110,13 +125,13 @@ print(f"T-statistic: {t_stat}, P-value: {p_value}")
 
 
 
-    
+
 ![png](output_11_1.png)
-    
+
 
 
     T-statistic: -21.322197813608945, P-value: 5.355238380988403e-82
-    
+
 
 In the plot above it can be observed that the boxplot comparing energy consumption on holidays versus non-holidays, it can be observed that there are notable differences in the distribution of consumption values. The median energy consumption on holidays is perceptibly lower, which hints at decreased usage during these periods. Furthermore, the boxplot shows a tighter interquartile range on holidays, indicating less variation in consumption as compared to non-holidays. The number of outliers is also reduced during holiday periods. These visual signs suggest a distinct consumption pattern on holidays, although they alone do not provide a statistically robust confirmation of the relationship. Considering the apparent lower variation in consumption on holidays and the significant difference in sample sizes between the two categories, since there are fewer holiday days compared to non-holiday days, it suggests that the underlying distributions of the data could be different.
 
@@ -148,9 +163,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_13_0.png)
-    
+
 
 
 Upon examination of the Q-Q plot in the plot above, it is apparent that the assumption of normality required for a t-test is not met. The plot shows a significant deviation from the red dashed line, which represents the expected pattern if the data were normally distributed. The data points exhibit a pronounced curve, bending away from the line, particularly in the tails. This indicates the presence of skewness in the data, as well as the possibility of heavy tails or outliers, which are common in non-normally distributed data.
@@ -178,7 +193,7 @@ print(f"Rank-biserial correlation (effect size): {rbc}")
 
     U-statistic: 13292456.0, P-value: 6.906870389551429e-52
     Rank-biserial correlation (effect size): -0.3157262496397022
-    
+
 
 \\(H_ 0\\) : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
 
@@ -206,9 +221,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_18_0.png)
-    
+
 
 
 Examining the plot above the energy consumption over different days of the week indicates variations in the median values of the consumption between weekdays, Friday and weekends, suggesting potential differences in energy usage. Moreover, there are observable changes in the spread of consumption data across these groups, as seen by variations in the interquartile ranges. While these visuals provide a preliminary indication of varying consumption patterns, they warrant a closer, more thorough statistical examination to determine the presence and significance of any correlation between energy consumption and the days of the week. Therefore, additional statistical tests are made to delve deeper into the data and establish whether the observed differences are indeed statistically significant.
@@ -234,7 +249,7 @@ stat, p_value = levene(*[df[df['DayOfWeek'] == day]['GrossConsumptionMWh'] for d
 
 homogeneity_variances_result = (stat, p_value)
 
-display(normality_results) 
+display(normality_results)
 
 ```
 
@@ -254,7 +269,7 @@ print(homogeneity_variances_result)
 ```
 
     (105.79714734486795, 3.0220662861968264e-132)
-    
+
 
 The statistical valuation of the energy consumption data, conducted through Shapiro-Wilk and Levene's tests, unveils two essential insights regarding the distribution characteristics of the 'sum_quantity' across weekdays. The Shapiro-Wilk test, applied individually to each weekday, produced p-values that decisively fall below the standard significance level of 0.05. These results indicate a significant difference from the normal distribution for the daily energy consumption data. In parallel, Levene's test for homogeneity of variances returned a p-value of approximately \\(3.02×10^{−132})\\ providing strong evidence against the presumption of equal variances among different weekdays.
 
@@ -273,7 +288,7 @@ print(f"Kruskal-Wallis statistic: {stat}, P-value: {p_value}")
 ```
 
     Kruskal-Wallis statistic: 2432.331816958906, P-value: 0.0
-    
+
 
 The results of the Kruskal-Wallis test reveals evidence of significant differences in energy consumption across different days of the week. With a Kruskal-Wallis statistic of 118.139 and a p-value of approximately \\(0)\\, the null hypothesis is rejected meaning that the median energy consumption levels are not the same across all days. The findings underscore a distinct pattern in energy usage over the course of the week, warranting further exploration into the specific day-to-day differences and the underlying factors driving these variations.
 
@@ -292,7 +307,7 @@ dunn_test_results = dunn_test_results.loc[ordered_days, ordered_days]
 
 # Visualize the correlation matrix
 plt.figure(figsize=(10, 8))
-sns.heatmap(dunn_test_results, annot=True, fmt=".4f", cmap='coolwarm', 
+sns.heatmap(dunn_test_results, annot=True, fmt=".4f", cmap='coolwarm',
             cbar_kws={'label': 'Correlation Coefficient'})
 plt.title('Post hoc Test Results (Dunn´s test) -  Monday to Sunday')
 plt.xticks(rotation=45)  # Rotating the x-axis labels to 45 degrees
@@ -300,9 +315,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_25_0.png)
-    
+
 
 
 The Dunn's post hoc test results show a distinct variation in energy consumption patterns across different days of the week. The comparison between Friday and Saturday as well as Friday and Sunday show a significant difference, suggesting a notable shift in energy usage transitioning from Friday to the weekend. However, when Friday is compared with the other weekdays (Monday, Tuesday, Wednesday and Thursday), the differences are not statistically significant.
