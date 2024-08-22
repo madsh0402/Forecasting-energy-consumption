@@ -195,11 +195,11 @@ print(f"Rank-biserial correlation (effect size): {rbc}")
     Rank-biserial correlation (effect size): -0.3157262496397022
 
 
-\\(H_ 0)\\ : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
+\\( H_ 0 \\) : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
 
-\\(H_ 1)\\ : There is a difference in the distributions of the two variables, which indicates a potential association between them. This implies that the median rank of one variable is not equal to the median rank of the other variable.
+\\( H_ 1 \\) : There is a difference in the distributions of the two variables, which indicates a potential association between them. This implies that the median rank of one variable is not equal to the median rank of the other variable.
 
-The Mann-Whitney U test applied to the energy consumption data yields a test statistic of 13,292,456 and a very small P-value of approximately \\(6.9×10^{−52})\\, which is far below a significance level of 0.05. This strongly suggests that the differences in energy consumption between holidays and non-holidays are statistically significant. Therefore, the null hypothesis of equal distributions across the two groups is rejected and therefore, the data suggests that holidays have an impact on energy consumption.
+The Mann-Whitney U test applied to the energy consumption data yields a test statistic of 13,292,456 and a very small P-value of approximately \\( 6.9×10^{−52} \\), which is far below a significance level of 0.05. This strongly suggests that the differences in energy consumption between holidays and non-holidays are statistically significant. Therefore, the null hypothesis of equal distributions across the two groups is rejected and therefore, the data suggests that holidays have an impact on energy consumption.
 
 Moreover, the rank-biserial correlation, a measure of effect size for the Mann-Whitney U test, is reported at approximately -0.315. While this value suggests a small to moderate effect size indicating that the median energy consumption on holidays is indeed lower than on non-holiday periods. It is essential to note that although the effect size is not large, it is significant enough to warrant consideration in models of energy consumption.
 
@@ -271,7 +271,7 @@ print(homogeneity_variances_result)
     (105.79714734486795, 3.0220662861968264e-132)
 
 
-The statistical valuation of the energy consumption data, conducted through Shapiro-Wilk and Levene's tests, unveils two essential insights regarding the distribution characteristics of the 'sum_quantity' across weekdays. The Shapiro-Wilk test, applied individually to each weekday, produced p-values that decisively fall below the standard significance level of 0.05. These results indicate a significant difference from the normal distribution for the daily energy consumption data. In parallel, Levene's test for homogeneity of variances returned a p-value of approximately \\(3.02×10^{−132})\\ providing strong evidence against the presumption of equal variances among different weekdays.
+The statistical valuation of the energy consumption data, conducted through Shapiro-Wilk and Levene's tests, unveils two essential insights regarding the distribution characteristics of the 'sum_quantity' across weekdays. The Shapiro-Wilk test, applied individually to each weekday, produced p-values that decisively fall below the standard significance level of 0.05. These results indicate a significant difference from the normal distribution for the daily energy consumption data. In parallel, Levene's test for homogeneity of variances returned a p-value of approximately \\( 3.02×10^{−132} \\) providing strong evidence against the presumption of equal variances among different weekdays.
 
 Given the deviation of both normality and homogeneity of variances, which are foundational assumptions of ANOVA, it is necessary to change the approach. As such, the Kruskal-Wallis test, a non-parametric test, is selected as the appropriate alternative for the analysis. This test is robust to the non-normality and variance heterogeneity present in the data, offering valid means to detect statistically significant differences in median
 
@@ -290,7 +290,7 @@ print(f"Kruskal-Wallis statistic: {stat}, P-value: {p_value}")
     Kruskal-Wallis statistic: 2432.331816958906, P-value: 0.0
 
 
-The results of the Kruskal-Wallis test reveals evidence of significant differences in energy consumption across different days of the week. With a Kruskal-Wallis statistic of 118.139 and a p-value of approximately \\(0)\\, the null hypothesis is rejected meaning that the median energy consumption levels are not the same across all days. The findings underscore a distinct pattern in energy usage over the course of the week, warranting further exploration into the specific day-to-day differences and the underlying factors driving these variations.
+The results of the Kruskal-Wallis test reveals evidence of significant differences in energy consumption across different days of the week. With a Kruskal-Wallis statistic of 118.139 and a p-value of approximately \\( 0 \\), the null hypothesis is rejected meaning that the median energy consumption levels are not the same across all days. The findings underscore a distinct pattern in energy usage over the course of the week, warranting further exploration into the specific day-to-day differences and the underlying factors driving these variations.
 
 To understand the specific day-to-day differences and underlying factors driving these variations, a detailed post hoc analysis was conducted following the Kruskal-Wallis test. The test was done to perform pairwise comparisons between the energy consumption on different weekdays. This approach was used to pinpoint the exact days where significant differences in energy consumption patterns emerge, providing a granular insight into the weekly energy usage dynamics. That hopefully will align with the suspension from the boxplots.
 
