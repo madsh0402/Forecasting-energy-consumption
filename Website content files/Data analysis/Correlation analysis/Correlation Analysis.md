@@ -195,9 +195,9 @@ print(f"Rank-biserial correlation (effect size): {rbc}")
     Rank-biserial correlation (effect size): -0.3157262496397022
 
 
-\\(H_ 0\\) : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
+\\(H_ 0)\\ : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
 
-\\(H_ 1\\) : There is a difference in the distributions of the two variables, which indicates a potential association between them. This implies that the median rank of one variable is not equal to the median rank of the other variable.
+\\(H_ 1)\\ : There is a difference in the distributions of the two variables, which indicates a potential association between them. This implies that the median rank of one variable is not equal to the median rank of the other variable.
 
 The Mann-Whitney U test applied to the energy consumption data yields a test statistic of 13,292,456 and a very small P-value of approximately \\(6.9×10^{−52})\\, which is far below a significance level of 0.05. This strongly suggests that the differences in energy consumption between holidays and non-holidays are statistically significant. Therefore, the null hypothesis of equal distributions across the two groups is rejected and therefore, the data suggests that holidays have an impact on energy consumption.
 
