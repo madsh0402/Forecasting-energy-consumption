@@ -1,5 +1,3 @@
----
----
 <div>
   <script type="text/x-mathjax-config">
     MathJax = {
