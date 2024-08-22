@@ -193,8 +193,6 @@ print(f"Rank-biserial correlation (effect size): {rbc}")
     U-statistic: 13292456.0, P-value: 6.906870389551429e-52
     Rank-biserial correlation (effect size): -0.3157262496397022
 
-\\( y_t \\)
-
 \\( H_0 \\) : There is no difference in the distributions of the two variables, implying no association between them. This means that the median rank of one variable is equal to the median rank of the other variable.
 
 \\( H_1 \\) : There is a difference in the distributions of the two variables, which indicates a potential association between them. This implies that the median rank of one variable is not equal to the median rank of the other variable.

@@ -42,7 +42,7 @@ navbar-links:
   Data Analysis:
     - Statistical insights of numerical variables: "/Website content files/Data analysis/Statistical insights of numerical variables/Statistical Insights of Numerical Variables"
     - Seasonality Analysis: "/Website content files/Data analysis/Seasonality Analysis/Seasonality"
-    - Correlation analysis: "404"
+    - Correlation analysis: "/Website content files/Data analysis/Correlation analysis/Correlation Analysis"
     - Decomposition of energy consumption: "404"
 
   Forecasting:
