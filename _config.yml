@@ -47,7 +47,7 @@ navbar-links:
     
   Forecasting Remainders:
     - Forecasting: "/Website content files/Forecasting/Forecasting analyzes/Forecasting analyzes"
-    - Framework: "404"
+    - Framework: "/Website content files/Forecasting/Framework/Framework"
     - Data preperation: "404"
     - Rolling window approach: "404"
     - Random Forest: "404"
@@ -55,6 +55,8 @@ navbar-links:
     - Real time forecasting: "404"
 
   Authors: "404"
+  
+  
   
   Appendix: 
     - Merging different data files: "/Website content files/Appendix/Merging data files/Merge data files"
