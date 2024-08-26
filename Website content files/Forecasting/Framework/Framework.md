@@ -22,8 +22,3 @@ The data is then split into training and test sets, where a sliding rolling wind
 
 To estimate the consumption, the trend and seasonal component is added back onto the estimated remainder, \\( \hat{R_t} \\) , which would then provide the estimated energy consumption for each timestep, \\( \hat{Y_t} \\) .
 The framework used is meant to predict the detrended and deseasonalized energy consumption efficiently, while handling the volatile nature of the energy consumption timeseries and the individual characteristics of each customer group.
-
-
-```python
-
-```
