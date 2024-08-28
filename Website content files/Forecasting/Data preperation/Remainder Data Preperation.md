@@ -58,7 +58,7 @@ The study employs several accuracy metrics to evaluate the forecasting performan
 
 $$ MAE = \frac{1}{N}\sum_{t=n_{train+1}}^{T} |R_t - \hat{R_t}| $$  
 
-* *RMSE* provides a measure of the square root of the average squared differences between predicted and actual values, emphasizing larger errors more significantly than MAE, thereby penalizing substantial deviations more heavily.
+* *RMSE* provides a measure of the square root of the average squared differences between predicted and actual values, emphasizing larger errors more significantly than *MAE*, thereby penalizing substantial deviations more heavily.
 
 $$ RMSE = \sqrt{\frac{1}{N}\sum_{t=n_{train+1}}^{T} (R_t - \hat{R_t})^2} $$
 
@@ -70,6 +70,8 @@ This section will look into how varying the length of the forecasting horizon af
 
 To better understand which impact the forecasting horizon (\\( h \\)) has on model performance, there was trained and tested for various OLS models across a spectrum of horizons, specifically at 1, 24, 48, 168, 720, 2160, and 4320 hours.
 
+<details>
+  <summary>Click to expand Python code for data preprocessing</summary>
 
 ```python
 import pandas as pd
@@ -146,15 +148,15 @@ fig.suptitle('Comparing $h$ Value for OLS Model at 24 Steps', fontsize=16)
 plt.show()
 ```
 
-
+</details><br>
 
 ![png](output_12_0.png)
 
 
 
-This suggests that while the model's average absolute error marginally worsens in the short-term, it improves at mid-range horizons before destabilizing at the farthest horizon. The median RMSE demonstrates a similar pattern to MAE, with an initial rise, a subsequent decrease, and then a moderate increase at the longest horizon. This indicates that the model's performance in terms of the square root of average squared errors is somewhat consistent with MAE, although with a slightly more pronounced variability.
+This suggests that while the model's average absolute error marginally worsens in the short-term, it improves at mid-range horizons before destabilizing at the farthest horizon. The *RMSE* demonstrates a similar pattern to *MAE*, with an initial rise, a subsequent decrease, and then a moderate increase at the longest horizon. This indicates that the model's performance in terms of the square root of average squared errors is somewhat consistent with *MAE*, although with a slightly more pronounced variability.
 
-Interpreting the results from both the line graphs reveals the nuanced influence the forecasting horizon has on the accuracy of the OLS model. In the short-term horizon at ℎ=1 and \\( h=24 \\), an increase in median MAE and RMSE is observed, which was not initially anticipated, suggesting that the model may encounter challenges in capturing shorter horizons in the data. Compared to the mid-range horizon between \\( h=168 \\) and \\( h=2160 \\), there is a general improvement in median *MAE* and *RMSE*. This could indicate the model's effectiveness at capturing and adjusting to patterns over medium-term intervals.
+Interpreting the results from both the line graphs reveals the nuanced influence the forecasting horizon has on the accuracy of the OLS model. In the short-term horizon at ℎ=1 and \\( h=24 \\), an increase in median *MAE* and *RMSE* is observed, which was not initially anticipated, suggesting that the model may encounter challenges in capturing shorter horizons in the data. Compared to the mid-range horizon between \\( h=168 \\) and \\( h=2160 \\), there is a general improvement in median *MAE* and *RMSE*. This could indicate the model's effectiveness at capturing and adjusting to patterns over medium-term intervals.
 
 These findings show some practical forecasting applications, when it comes to short-term forecasting the need is for immediate forecasting, therefore a model may require additional fine-tuning or incorporation of more immediate past values to enhance accuracy. Whereas medium-term forecasting in the mid-range horizons shows promising results with more stable predictions, suggesting that the OLS model is better suited for medium-termed forecasting requirements. When looking at the long-term forecasting the variability observed at the longest horizon shows a rise in the accuracy matrices however, only a slight increase in the median. It indicates that the model could be used for larger horizons without having a large effect on the predictions.
 
