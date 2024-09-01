@@ -73,13 +73,15 @@ To better understand which impact the forecasting horizon (\\( h \\)) has on mod
 <details>
   <summary>Click to expand Python code for data preprocessing</summary>
 
-  <pre><code class="language-python">
+  <pre style="background-color: #f7f7f7; border: 1px solid #ddd; padding: 10px; overflow-x: auto; border-radius: 5px; font-size: 14px;">
+  <code class="language-python">
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
   </code></pre>
 
-<pre><code class="language-python">
+  <pre style="background-color: #f7f7f7; border: 1px solid #ddd; padding: 10px; overflow-x: auto; border-radius: 5px; font-size: 14px;">
+  <code class="language-python">
 h1_24steps_results_path    = f"{base_path}h=1_steps_ahead=24_OLS_Metrics.csv"
 h24_24steps_results_path   = f"{base_path}h=24_steps_ahead=24_OLS_Metrics.csv"
 h48_24steps_results_path   = f"{base_path}h=48_steps_ahead=24_OLS_Metrics.csv"
@@ -97,7 +99,8 @@ h2160_24steps_results = pd.read_csv(h2160_24steps_results_path)
 h4320_24steps_results = pd.read_csv(h4320_24steps_results_path)
   </code></pre>
 
-  <pre><code class="language-python">
+  <pre style="background-color: #f7f7f7; border: 1px solid #ddd; padding: 10px; overflow-x: auto; border-radius: 5px; font-size: 14px;">
+  <code class="language-python">
 # Define a function to plot metrics
 def plot_metric(ax, metric_name):
     # Directly map metric values from the data
@@ -148,10 +151,10 @@ fig.suptitle('Comparing $h$ Value for OLS Model at 24 Steps', fontsize=16)
 plt.show()
   </code></pre>
   </details>
-
+  
 ![png](output_12_0.png)
 
-TEST
+TEST 3
 
 This suggests that while the model's average absolute error marginally worsens in the short-term, it improves at mid-range horizons before destabilizing at the farthest horizon. The *RMSE* demonstrates a similar pattern to *MAE*, with an initial rise, a subsequent decrease, and then a moderate increase at the longest horizon. This indicates that the model's performance in terms of the square root of average squared errors is somewhat consistent with *MAE*, although with a slightly more pronounced variability.
 
