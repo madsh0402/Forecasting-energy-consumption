@@ -1,0 +1,23 @@
+<!-- _includes/head.html -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+
+  <!-- Include common CSS files -->
+  {% for css in page.common-css %}
+    <link href="{{ css }}" rel="stylesheet">
+  {% endfor %}
+  {% for ext_css in page.common-ext-css %}
+    {% if ext_css.sri %}
+      <link href="{{ ext_css.href }}" rel="stylesheet" integrity="{{ ext_css.sri }}" crossorigin="anonymous">
+    {% else %}
+      <link href="{{ ext_css }}" rel="stylesheet">
+    {% endif %}
+  {% endfor %}
+
+  <!-- Add your custom CSS file link here -->
+  <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
+
+  <!-- Add any other meta tags or external resources here -->
+</head>
