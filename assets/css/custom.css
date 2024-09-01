@@ -1,0 +1,14 @@
+/* assets/custom.css */
+pre {
+  background-color: #f7f7f7; /* Light grey background for the code block */
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 10px; /* Padding inside the code block */
+  overflow-x: auto; /* Horizontal scroll for long lines */
+  border-radius: 5px; /* Rounded corners for the border */
+  font-size: 14px; /* Set the font size */
+}
+
+code {
+  font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+  color: #333; /* Dark grey color for the text */
+}
