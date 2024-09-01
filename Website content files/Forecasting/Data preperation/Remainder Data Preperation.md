@@ -73,13 +73,13 @@ To better understand which impact the forecasting horizon (\\( h \\)) has on mod
 <details>
   <summary>Click to expand Python code for data preprocessing</summary>
 
-```python
+  <pre><code class="language-python">
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-```
+  </code></pre>
 
-```python
+<pre><code class="language-python">
 h1_24steps_results_path    = f"{base_path}h=1_steps_ahead=24_OLS_Metrics.csv"
 h24_24steps_results_path   = f"{base_path}h=24_steps_ahead=24_OLS_Metrics.csv"
 h48_24steps_results_path   = f"{base_path}h=48_steps_ahead=24_OLS_Metrics.csv"
@@ -95,9 +95,9 @@ h168_24steps_results  = pd.read_csv(h168_24steps_results_path)
 h720_24steps_results  = pd.read_csv(h720_24steps_results_path)
 h2160_24steps_results = pd.read_csv(h2160_24steps_results_path)
 h4320_24steps_results = pd.read_csv(h4320_24steps_results_path)
-```
+  </code></pre>
 
-```python
+  <pre><code class="language-python">
 # Define a function to plot metrics
 def plot_metric(ax, metric_name):
     # Directly map metric values from the data
@@ -146,9 +146,8 @@ fig.subplots_adjust(top=0.85)
 fig.suptitle('Comparing $h$ Value for OLS Model at 24 Steps', fontsize=16)
 
 plt.show()
-```
-
-</details><br>
+  </code></pre>
+  </details>
 
 ![png](output_12_0.png)
 
