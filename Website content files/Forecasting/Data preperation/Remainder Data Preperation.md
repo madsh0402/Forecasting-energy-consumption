@@ -151,7 +151,7 @@ plt.show()
 
 ![png](output_12_0.png)
 
-
+TEST
 
 This suggests that while the model's average absolute error marginally worsens in the short-term, it improves at mid-range horizons before destabilizing at the farthest horizon. The *RMSE* demonstrates a similar pattern to *MAE*, with an initial rise, a subsequent decrease, and then a moderate increase at the longest horizon. This indicates that the model's performance in terms of the square root of average squared errors is somewhat consistent with *MAE*, although with a slightly more pronounced variability.
 
