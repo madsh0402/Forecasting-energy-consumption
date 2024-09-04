@@ -71,7 +71,7 @@ This section will look into how varying the length of the forecasting horizon af
 To better understand which impact the forecasting horizon (\\( h \\)) has on model performance, there was trained and tested for various OLS models across a spectrum of horizons, specifically at 1, 24, 48, 168, 720, 2160, and 4320 hours.
 
 <details>
-  <summary>Click to expand Python code for data preprocessing</summary>
+  <summary>Click to expand Python code for the following plot</summary>
 
   <pre style="background-color: #f7f7f7; border: 1px solid #ddd; padding: 10px; overflow-x: auto; border-radius: 5px; font-size: 14px;">
   <code class="language-python">
@@ -151,10 +151,8 @@ fig.suptitle('Comparing $h$ Value for OLS Model at 24 Steps', fontsize=16)
 plt.show()
   </code></pre>
   </details>
-  
-![png](output_12_0.png)
 
-TEST 3
+![png](output_12_0.png)
 
 This suggests that while the model's average absolute error marginally worsens in the short-term, it improves at mid-range horizons before destabilizing at the farthest horizon. The *RMSE* demonstrates a similar pattern to *MAE*, with an initial rise, a subsequent decrease, and then a moderate increase at the longest horizon. This indicates that the model's performance in terms of the square root of average squared errors is somewhat consistent with *MAE*, although with a slightly more pronounced variability.
 
