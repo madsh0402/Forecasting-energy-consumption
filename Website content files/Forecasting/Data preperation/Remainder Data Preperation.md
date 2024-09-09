@@ -12,7 +12,7 @@
   </script>
 </div>
 
-## 5.3 Preparing customer groups for forecasting
+## 5.3 Preparing the timeseries for forecasting
 
 Data preprocessing is one of the bedrocks for forecasting model’s accuracy. It is crucial for transforming raw data into another format that algorithms can analyze with precision. The numerical features are scaled to neutralize scale disparities and encode categorical variables numerically to ensure the model interprets every data point correctly. These steps are setting the stage for the analysis that follows. After explaining this process, the following chapter will delve into the effect the forecasting horizon has on the model’s prediction accuracy. By doing so, analyze how the model could be used to predict energy consumption across different time spans.
 
