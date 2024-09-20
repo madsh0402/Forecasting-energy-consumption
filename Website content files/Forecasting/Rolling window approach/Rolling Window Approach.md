@@ -168,7 +168,7 @@ Therefore, the selection of window length must be considered to ensure an optima
 
 <pre style="background-color: #f7f7f7; border: 1px solid #ddd; padding: 10px; overflow-x: auto; border-radius: 5px; font-size: 14px;">
 <code class="language-python">
-base_path = "C:/Users/madsh/OneDrive/Dokumenter/kandidat/Fællesmappe/Forecasting-energy-consumption/Data/Results/OLS/Metrics/"
+base_path = "Forecasting-energy-consumption/Data/Results/OLS/Metrics/"
 
 h1_1steps_results_path    = f"{base_path}h=1_steps_ahead=1_OLS_Metrics.csv"
 h1_24steps_results_path   = f"{base_path}h=1_steps_ahead=24_OLS_Metrics.csv"
