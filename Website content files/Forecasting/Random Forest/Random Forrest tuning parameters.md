@@ -13,7 +13,7 @@
 </div>
 
 
-# 5.5 Random Forrest: tuning parameters
+## 5.5 Random Forrest: tuning parameters
 
 Parameter tuning is a very important part of using decision tree regression and RF models, in forecasting. Both the decision tree and RF specific parameters, as mentioned in chapter 3.5, can have significant impact on the model’s accuracy, in this case it is parameters like the depth of the tree, the maximum number of features considered for splitting a node, the minimum number of data points placed in a node before the node is split, and the minimum number of data points allowed in a leaf node. These parameters help control the tradeoff between bias and variance and allows the model to capture non-linear relationships more effectively.
 
