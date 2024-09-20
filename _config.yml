@@ -50,7 +50,7 @@ navbar-links:
     - Framework: "/Website content files/Forecasting/Framework/Framework"
     - Data preperation: "/Website content files/Forecasting/Data preperation/Remainder Data Preperation"            
     - Rolling window approach: "/Website content files/Forecasting/Rolling window approach/Rolling Window Approach"
-    - Random Forest: "/Website content files/Forecasting/Random Forest/Random Forrest tuning parameters"
+    - Random Forest Hyper Tuninng: "/Website content files/Forecasting/Random Forest/Random Forrest tuning parameters"
     - Evalutation of best models: "404"
     - Real time forecasting: "404"
 
