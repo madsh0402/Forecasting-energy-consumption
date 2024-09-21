@@ -51,7 +51,7 @@ navbar-links:
     - Data preperation: "/Website content files/Forecasting/Data preperation/Remainder Data Preperation"            
     - Rolling window approach: "/Website content files/Forecasting/Rolling window approach/Rolling Window Approach"
     - Random Forest Hyper Tuninng: "/Website content files/Forecasting/Random Forest/Random Forrest tuning parameters"
-    - Evalutation of best models: "404"
+    - Evalutation of best models: "/Website content files/Forecasting/Evaluation of best models/Diabold mariano"
     - Real time forecasting: "404"
 
   Authors: "404"
@@ -85,14 +85,15 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+# email: "someone@example.com"
+# email: "someone@example.com"
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
+#  github: daattali
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: "@daattali"
+#  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
