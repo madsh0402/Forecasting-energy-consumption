@@ -51,7 +51,7 @@ navbar-links:
     - Data preperation: "/Website content files/Forecasting/Data preperation/Remainder Data Preperation"            
     - Rolling window approach: "/Website content files/Forecasting/Rolling window approach/Rolling Window Approach"
     - Random Forest Hyper Tuninng: "/Website content files/Forecasting/Random Forest/Random Forrest tuning parameters"
-    - Evalutation of best models: "404"
+    - Evalutation of best models: "/Website content files/Forecasting/Evaluation of best models/Diabold mariano"
     - Real time forecasting: "404"
 
   Authors: "404"
