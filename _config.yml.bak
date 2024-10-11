@@ -52,7 +52,15 @@ navbar-links:
     - Rolling window approach: "/Website content files/Forecasting/Rolling window approach/Rolling Window Approach"
     - Random Forest Hyper Tuninng: "/Website content files/Forecasting/Random Forest/Random Forrest tuning parameters"
     - Evalutation of best models: "/Website content files/Forecasting/Evaluation of best models/Diabold mariano"
-    - Real time forecasting: "404"
+    - Real time forecasting: "/Website content files/Forecasting/Real time forecasting/Real Time Forecasting"
+    - Summary: "/Website content files/Forecasting/Summary/Summary"
+    
+  Discussion and Conclusion:
+    - Discussion: "404"
+    - Further research: "404"
+    - Conclusion: "404"
+    
+  References: "404
 
   Authors: "404"
   
