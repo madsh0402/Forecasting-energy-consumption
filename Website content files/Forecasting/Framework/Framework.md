@@ -14,7 +14,7 @@
 
 ## 5.1 Framework
 
-This section of the thesis will outline the framework adopted to forecast energy consumption across the customer groups. The primary dataset comprises time series data where \\( Y_t \\) represents the consumption variable (dependent variable) and \\( X_t \\) denotes a set of independent variables influencing consumption. A critical preprocessing step involves the application of MSTL, for decomposing the time series data to eliminate underlying trend and seasonality from \\( Y_t \\) , returning the remainders \\( R_t \\) , these remainders represent the detrended and deseasonalized consumption data. Chapter 3.1.2.6 offers a more detailed description of MSTL.
+This section of the thesis will outline the framework adopted to forecast energy consumption. The primary dataset comprises time series data where \\( Y_t \\) represents the consumption variable (dependent variable) and \\( X_t \\) denotes a set of independent variables influencing consumption. A critical preprocessing step involves the application of MSTL, for decomposing the time series data to eliminate underlying trend and seasonality from \\( Y_t \\) , returning the remainders \\( R_t \\) , these remainders represent the detrended and deseasonalized consumption data. Chapter 3.1.2.6 offers a more detailed description of MSTL.
 
 Categorical variables were transformed into dummy variables and normalizing numerical variables through min-max scaling. Independent variable \\( X_t \\) are then lagged to \\( X_{t-h} \\) , where \\( h \\) is the horizon, to facilitate prediction into the future.
 
