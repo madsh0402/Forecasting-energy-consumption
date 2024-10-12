@@ -1,3 +1,17 @@
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ## 4.7 Decomposing energy consumption patterns
 
 Following the exploration of multiple seasonality within energy consumption, it becomes essential to decompose the observed patterns to recognize underlying trends and the cyclical behavior. Time series decomposition allow us to separate data into components of trend, seasonal and remainders, each providing unique insights into the nature of energy consumption fluctuations. Therefor this chapter will utilize MSTL approach to help break down these components within our dataset.
