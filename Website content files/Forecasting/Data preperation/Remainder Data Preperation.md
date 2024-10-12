@@ -56,11 +56,11 @@ The study employs several accuracy metrics to evaluate the forecasting performan
 
 * *MAE* measures the average magnitude of the errors in a set of predictions, without considering their direction. It's a straightforward metric that provides insight into the average error magnitude.
 
-$$ MAE = \frac{1}{N}\sum_{t=n_{train+1}}^{T} |R_t - \hat{R_t}| $$  
+$$ MAE = \frac{1}{N}\sum_{t=n_{train}+1}^{T} |R_t - \hat{R_t}| $$  
 
 * *RMSE* provides a measure of the square root of the average squared differences between predicted and actual values, emphasizing larger errors more significantly than *MAE*, thereby penalizing substantial deviations more heavily.
 
-$$ RMSE = \sqrt{\frac{1}{N}\sum_{t=n_{train+1}}^{T} (R_t - \hat{R_t})^2} $$
+$$ RMSE = \sqrt{\frac{1}{N}\sum_{t=n_{train}+1}^{T} (R_t - \hat{R_t})^2} $$
 
 Together, these metrics give a framework for evaluating the performance of the forecasting model across different horizons, facilitating an informed selection of the most appropriate model configurations for accurate future predictions. For a more detailed description please see chapter 3.6.1
 
