@@ -29,7 +29,7 @@ navbar-links:
     - ML Random Forest: "/Website content files/Old Research/ML Random Forest/Random Forrest Regression"
     - ML Boosting: "404"
   Intro & theory:
-    - Intro: "404"
+    - Intro: "/Website content files/Intro & Theory/Intro"
     - Time series decomposition: "/Website content files/Intro & Theory/Time Series Decomposition"
     - Rolling window: "/Website content files/Intro & Theory/Rolling Window"
     - Bias Variance trade-off: "/Website content files/Intro & Theory/Bias Variance Trade Off"
