@@ -14,7 +14,7 @@
 
 # 7. Conclusion
 
-In this thesis, there has been explored machine learning models applied to decomposed energy consumption time series, focusing on the use of MSTL. This thesis was initiated in collaboration with Andel Energi who wanted to see machine learning applied to their forecasting objectives, in the light is the recent energy crises resulting in a shift in consumer behavior.
+In this thesis, there has been explored machine learning models applied to decomposed energy consumption time series, focusing on the use of MSTL. This thesis was initiated for energy companies who wanted to see machine learning applied to their forecasting objectives, in the light is the recent energy crises resulting in a shift in consumer behavior.
 
 The central research question posed at the beginning of this study was:
 
