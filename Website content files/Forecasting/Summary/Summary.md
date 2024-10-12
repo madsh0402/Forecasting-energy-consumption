@@ -1,3 +1,17 @@
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ## 5.8 Summary
 
 In this chapter, the forecasting of detrended and deseasonalized energy consumption has been analyzed and has provided an insight into the framework that have been taken into use.
