@@ -1,3 +1,17 @@
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 ## 8 References
 
 Awartani, B., & Corradi, V. (2005). Predicting the volatility of the S&P-500 stock index via GARCH models: the role of asymmetries. International Journal of Forecasting, 21(1), 167–183. https://doi.org/10.1016/j.ijforecast.2004.08.003
@@ -16,7 +30,7 @@ Danmarks Statistik. (Udgivet dato ukendt). Elbiler udgjorde 36 pct. af de nye bi
 
 Danmarks Statistik. (Udgivet dato ukendt). Statistikbanken - Danskernes indkøb af varer og tjenester. (03.02.2024). Hentet fra: https://www.statistikbanken.dk/20721
 
-Danmarks Statistik. (Udgivet dato ukendt). Statistikbanken - Bilparkens sammensætning. (03.01.2024). Hentet fra: https://www.statistikbanken.dk/bil51 
+Danmarks Statistik. (Udgivet dato ukendt). Statistikbanken - Bilparkens sammensætning. (03.01.2024). Hentet fra: https://www.statistikbanken.dk/bil51
 
 Dunn, O.J. (1961) Multiple comparisons among means. JASA, 56: 54-64. Energistyrelsen. (Udgivet dato ukendt). Danskernes energiforbrug daler – syv ud af ti sparer på energien. (2023, May 2). Hentet fra: https://ens.dk/presse/danskernes-energiforbrug-daler-syv-ud-af-ti-sparer-paa-energien
 
@@ -43,8 +57,8 @@ Neupert, S. (2024, April 11). I dag får danskerne penge tilbage i skat – her 
 
 S&P Global Market Intelligence. (Udgivet dato ukendt). The rise of electric vehicles heightens grid integration imperative. (19.04.2024). Hentet fra: https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/ev-impact-rise-of-electric-vehicles-heightens-grid-integration-imperative-66620630
 
-Shapiro, S. S., & Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, Volume 52, Issue 3-4, December 1965, Pages 591–611, https://doi.org/10.1093/biomet/52.3-4.591 
+Shapiro, S. S., & Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, Volume 52, Issue 3-4, December 1965, Pages 591–611, https://doi.org/10.1093/biomet/52.3-4.591
 
-Welch, B. L. (1947). "The generalization of "Student's" problem when several different population variances are involved" 
+Welch, B. L. (1947). "The generalization of "Student's" problem when several different population variances are involved"
 
 Zhang, C., Wang, W., Wu, J., & Wang, J. (2018). A review of electric vehicle integration into modern power grids. arXiv preprint arXiv:1804.03515. (09.01.2024). Hentet fra: https://ar5iv.labs.arxiv.org/html/1804.03515
