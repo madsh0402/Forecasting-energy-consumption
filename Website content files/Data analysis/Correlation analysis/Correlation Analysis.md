@@ -327,7 +327,3 @@ Comparisons among the weekdays (Tuesday, Wednesday and Thursday) reveal no signi
 
 These results underline the necessity to consider daily fluctuations in energy consumption for effective energy consumption forecasting. The observed significant differences, particularly between certain weekdays and weekends, could reflect varying residential or commercial activities, supporting targeted energy utilization strategies that are tailored to specific days of the week.
 
-
-```python
-
-```
