@@ -14,7 +14,7 @@
 
 ## 5.4 Rolling window approach
 
-The rolling window approach is an important part of the forecasting framework, as it is particularly suited to time series data. This technique is a tool used to address autocorrelation. By using a rolling window to retrain the models at specified intervals, it can capture and adapt to the evolving dynamics within each customer group’s time series. For a more detailed description of the rolling window approach see chapter 3.3.
+The rolling window approach is an important part of the forecasting framework, as it is particularly suited to time series data. This technique is a tool used to address autocorrelation. By using a rolling window to retrain the models at specified intervals, it can capture and adapt to the evolving dynamics within the time series. For a more detailed description of the rolling window approach see chapter 3.3.
 
 Autocorrelation in time series data can lead to biased estimates and misleading results if not properly accounted for.
 
