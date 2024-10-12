@@ -35,8 +35,3 @@ To look at the difference the following comparison has been made from the same t
 ![image.png](mstlcompare.png)
 
 A segment of the two-year, decomposed via MSTL is observed. The trend component \\(T_t\\), when comparing the full time series to the initial two-year period, shows minimal absolute deviation, with a slight increase at the end of the series. This suggests a stable direction in the data with minor increase at the end. The daily seasonal component \\(S_t^{daily}\\) demonstrates greater variation, particularly accentuated during the year's end. This suggests a predictable, yet with fluctuation which could be linked to seasonal activities. When zooming out and looking at the yearly seasonality \\(S_t^{yearly}\\) a slight increase in the absolute and the differences are observed also around the year’s end, which support what \\(S_t^{daily}\\) demonstrated. However, it seems for trend and seasonal component the difference between a decomposition for the whole time series or for a two year decomposition are relative small. The Remainder component \\(R_t\\) show the largest differences. The absolute differences here underscore the challenge of predicting the decomposed time series. The disparities among the compared components, while present, are not significant. This indicates that real-time forecasts, although slightly less precise than the models utilizing the complete time series for decomposition, still maintain a reliable level of accuracy. Such models are capable of projecting future energy consumption. Therefore, it could be used in a real-world forecasting where the consumption is unknown.
-
-
-```python
-
-```
