@@ -118,9 +118,8 @@ fig.suptitle('')
 
 
 The graph suggests a relatively consistent level of energy consumption across the different weekdays. This is contrary to the typical seasonal patterns, there does not appear to be any significant fluctuation that would indicate a strong weekly seasonality. This could be attributed to many different factors.
-Given that the dataset is comprised of private customers, the lack of weekly seasonality might reflect a consistent daily routine in residential energy use. Unlike commercial or industrial users private consumers may not exhibit as pronounced a variance between weekdays and weekends in their energy consumption. Especially if their home activities, heating, and appliance use remain somewhat relatively stable throughout the week.
 
-Additionally, the presence of outliers on all days suggests that occasional peaks in energy usage are not confined to specific days of the week. These could be due to non-routine events, such as social gatherings, extreme weather conditions requiring more heating or cooling, or other customer group behaviors not tied to the day of the week. It is also worth considering that energy consumption could be influenced by other
+Additionally, the presence of outliers on all days suggests that occasional peaks in energy usage are not confined to specific days of the week. These could be due to non-routine events, such as social gatherings, extreme weather conditions requiring more heating or cooling. It is also worth considering that energy consumption could be influenced by other
 
 factors not captured in the dataset, such as energy-saving measures adopted by consumers that may uniformly affect the entire week.
 When looking at the daily seasonality in the graph “Sum Quantity Distribution Daily” it showcases the following energy consumption patterns within a 24-hour cycle:
