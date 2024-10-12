@@ -2,7 +2,7 @@
 
 In this chapter, the forecasting of detrended and deseasonalized energy consumption has been analyzed and has provided an insight into the framework that have been taken into use.
 
-The assessment of the forecasting horizon’s impact was found to not have a large impact on the forecasting accuracy, meaning that the framework is useable to forecast into the future by adjusting the forecasting horizon, \\(h\\), ensuring the framework ability to forecast long range energy consumption.
+The assessment of the forecasting horizon’s impact was found to not have a large impact on the forecasting accuracy, meaning that the framework is useable to forecast into the future by adjusting the forecasting horizon, \\( h \\), ensuring the framework ability to forecast long range energy consumption.
 
 Moreover, the analysis of the effect of the rolling window approach showed that retraining frequency had a large impact on the accuracy of the forecast. The findings showed that the accuracy of predictions is improved by frequent model retraining, however, this has a high impact on the amount of computational resources, meaning that it would be needed to balance computational resources with the optimal forecast precision, so the retraining frequency should be as high as the computational resources available allows.
 The analysis also looked at the window size used for training which also showed to have considerable influence on the model performance. The analysis showed that a one-year window size emerged as an effective balance, capturing enough historical data to account for hidden seasonality and trend while retaining responsiveness to new data for both OLS and RF.
