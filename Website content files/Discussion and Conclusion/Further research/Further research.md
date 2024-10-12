@@ -1,3 +1,18 @@
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
+
 ## 6.5 Further research
 
 Although the practical implications and challenges discussed above represent some of the limitations of this study, they can also guide toward possible directions for future research that could improve the model showcased in the paper. Several common challenges can arise in modeling scenarios: overfitting in OLS models may skew results, and variable selection in RF could lead to inaccuracies. Thus, one possibility for future research might be to try some regularization techniques such as Lasso or Ridge regression. Regularization can help combat overfitting by punishing the size of the coefficients and consequently penalizing the model’s complexity. It is also possible to research the effect of regularization techniques on model efficiency, which variables were kept, and which were erased, as well as whether the prediction accuracy has changed.

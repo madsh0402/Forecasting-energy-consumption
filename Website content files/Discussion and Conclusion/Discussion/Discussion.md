@@ -1,3 +1,17 @@
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
 # 6 Discussion of forecasting energy consumption
 
 This thesis has provided insight into energy consumption forecasting and has illustrated the use of machine learning related to energy supplier companies. In the present context, the following sections will briefly restate the main results and then analyze what the results implicate. Following the summary of the results and implications, the next section will explain the restrictions associated with this study. Finally, before the conclusion, some ideas will be presented and discussed for future studies.

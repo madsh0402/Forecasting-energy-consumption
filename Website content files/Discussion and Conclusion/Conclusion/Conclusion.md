@@ -1,4 +1,18 @@
-## 7. Conclusion
+<div>
+  <script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</div>
+
+# 7. Conclusion
 
 In this thesis, there has been explored machine learning models applied to decomposed energy consumption time series, focusing on the use of MSTL. This thesis was initiated in collaboration with Andel Energi who wanted to see machine learning applied to their forecasting objectives, in the light is the recent energy crises resulting in a shift in consumer behavior.
 
