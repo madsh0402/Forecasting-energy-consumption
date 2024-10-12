@@ -26,8 +26,3 @@ And \\(\text{Var}(\bar{d})\\) is the variance of these differences. A statistica
 
 There is a modified DM Test called the Harvey, Leybourne, & Newbold (HLN) Test. This test expands the DM test by adjusting for size distortions and enhancing reliability, particularly under scenarios where forecasting errors may not have normally distributed patterns. The HLN test statistic is formulated to capture the differences in the mean squared errors (MSEs), adjusted for potential heteroskedasticity (changes in variance across the sample) and autocorrelation (correlation of a variable with its past values) in the forecast errors (Harvey et al., 1997).
 
-
-
-```python
-
-```
