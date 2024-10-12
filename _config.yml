@@ -56,11 +56,11 @@ navbar-links:
     - Summary: "/Website content files/Forecasting/Summary/Summary"
     
   Discussion and Conclusion:
-    - Discussion: "404"
-    - Further research: "404"
-    - Conclusion: "404"
+    - Discussion: "/Website content files/Discussion and Conclusion/Discussion/Discussion"
+    - Further research: "/Website content files/Discussion and Conclusion/Further research/Further research"
+    - Conclusion: "/Website content files/Discussion and Conclusion/Conclusion/Conclusion"
 
-  References: "404"
+  References: "/Website content files/References/References"
 
   Authors: "404"
 

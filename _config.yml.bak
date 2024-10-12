@@ -20,7 +20,7 @@ author: Mads Hansen And Victor Gustavsen
 ###############################################
 
 navbar-links:
-  Old reseach: 
+  Old research: 
     - Data Energy: "/Website content files/Old Research/Energy/Energy Data"
     - Data Weather observatioos: "/Website content files/Old Research/Weather observations/Tempature data"
     - Data Weather forecasts: "/Website content files/Old Research/Forecast/Historical forecasts data"
@@ -55,7 +55,7 @@ navbar-links:
     - Real time forecasting: "/Website content files/Forecasting/Real time forecasting/Real Time Forecasting"
     - Summary: "/Website content files/Forecasting/Summary/Summary"
     
- Discussion and Conclusion:
+  Discussion and Conclusion:
     - Discussion: "404"
     - Further research: "404"
     - Conclusion: "404"
